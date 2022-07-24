@@ -24,7 +24,6 @@ body {
   font-size: 18px;
   font-family: "Outfit", sans-serif;
   background-color: var(--VerydarkblueMainBG);
- 
 }
 
 .card {
@@ -33,14 +32,12 @@ body {
   width: 90%;
   height: 100vh;
   padding: 1.3em;
-  border-radius: .5em;
-  box-shadow: -14px 18px 5px 1px rgba(0,0,0,0.71);
--webkit-box-shadow: -14px 18px 5px 1px rgba(0,0,0,0.2);
--moz-box-shadow: -14px 18px 5px 1px rgba(0,0,0,0.2);
-
-  
+  border-radius: 0.5em;
+  box-shadow: -14px 18px 5px 1px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: -14px 18px 5px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -14px 18px 5px 1px rgba(0, 0, 0, 0.2);
 }
-.card-cont-imagen{
+.card-cont-imagen {
   background-image: url(./images/image-equilibrium.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -48,36 +45,33 @@ body {
   width: 100%;
   height: 50%;
   margin: 0 auto;
- overflow: hidden;
-  border-radius: .5em;
-  
+  overflow: hidden;
+  border-radius: 0.5em;
 }
 
-.card-cont-img-eye{
-  background-color: hsla(178, 100%, 50%, 0.3);;
+.card-cont-img-eye {
+  background-color: hsla(178, 100%, 50%, 0.3);
   background-image: url(./images/icon-view.svg);
   background-position: center;
   background-repeat: no-repeat;
- 
+
   width: 100%;
   height: 100%;
   opacity: 0;
 }
 
-.card-cont-img-eye:hover{
+.card-cont-img-eye:hover {
   opacity: 1;
   cursor: pointer;
 }
 
-
-
 .card-title {
   color: var(--White);
   font-weight: 600;
-  margin-top: .7em;
+  margin-top: 0.7em;
 }
 
-.card-title:hover{
+.card-title:hover {
   color: var(--Cyan);
   cursor: pointer;
 }
@@ -85,109 +79,102 @@ body {
 .card-description {
   color: var(--Softblue);
   font-weight: 300;
-  margin-top: .7em;
-  margin-bottom: .7em;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
 }
 
-.card-container-dates{
- display:flex;
- justify-content: space-between;
- align-items: center;
- margin: 1.2em 0;
+.card-container-dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2em 0;
 }
 
-
-.values{
+.values {
   color: var(--Cyan);
 }
 
-.time{
+.time {
   color: var(--Softblue);
 }
 
-.line{
-  border-top: .8px solid var(--Softblue);
+.line {
+  border-top: 0.8px solid var(--Softblue);
   margin-top: 1.5em;
 }
 
-
-.card-cont-creation{
- 
+.card-cont-creation {
   margin-top: 1.5em;
   display: flex;
 
   align-items: center;
   justify-content: flex-start;
- 
-  
 }
 
-
-.card-cont-creation-img{
+.card-cont-creation-img {
   width: 14%;
   border-radius: 50%;
   border: 1px solid var(--White);
   margin-right: 1.2em;
 }
 
-.card-cont-creation-author{
+.card-cont-creation-author {
   color: var(--Softblue);
 }
 
-
-
-.card-cont-creation-name{
+.card-cont-creation-name {
   color: var(--White);
 }
 
-.card-cont-creation-name:hover{
+.card-cont-creation-name:hover {
   color: var(--Cyan);
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
 /* _-----------desktop------------ */
 
-@media screen and ( min-width:600px) {
-  .card{
+@media screen and (min-width: 600px) {
+  .card {
     width: 50%;
     height: 100vh;
   }
 }
 
-
-
-@media screen and ( min-width:920px) {
-  .card{
+@media screen and (min-width: 920px) {
+  .card {
     width: 40%;
     height: 95vh;
   }
 }
 
-
-
-
-@media screen and ( min-width:1020px) {
-  .card{
+@media screen and (min-width: 1020px) {
+  .card {
     width: 26%;
     height: 80vh;
   }
 }
 
-
 /* ---------footer-------- */
 
 .attribution {
-  font-size: 11px;
+  font-size: 1em;
   text-align: center;
+  background-color: var(--VerydarkblueCardBG);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em;
 }
+
+.attribution p{
+  color: var(--Softblue);
+  margin-right: .5em;
+}
+
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Cyan);
+  text-decoration: none;
 }
